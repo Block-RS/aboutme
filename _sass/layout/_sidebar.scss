@@ -94,8 +94,10 @@
   }
 
   img {
-    max-width: 175px;
-    border-radius: 50%;
+    width: 175px;       // 固定宽度
+    height: 175px;      // 固定高度
+    border-radius: 50%; // 强制圆形
+    object-fit: cover;  // 防止图片拉伸变形
 
     @include breakpoint($large) {
       padding: 5px;
